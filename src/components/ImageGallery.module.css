@@ -1,0 +1,14 @@
+/* components/ImageGallery.module.css */
+
+.gallery {
+  display: flex;
+  justify-content: center; /* 水平居中對齊 */
+  gap: 80px; /* 設置圖片之間的固定間隔 */
+  margin-bottom: 3.5rem; /* 調整與上方區域的間距 */
+  
+}
+
+.image {
+  width: 240px; /* 設置圖片的固定寬度，根據需求調整 */
+  height: auto; /* 保持圖片的比例 */
+}

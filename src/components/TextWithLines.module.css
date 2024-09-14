@@ -1,0 +1,22 @@
+/* components/TextWithLines.module.css */
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* 居中對齊 */
+  margin-top: 3.5rem; /* 調整與上方區域的間距 */
+  margin-bottom: 3.5rem; /* 調整與上方區域的間距 */
+  
+}
+
+.line {
+  width: 300px; /* 設置固定長度，根據需要調整 */
+  border-bottom: 0.8px solid rgb(69, 71, 59); /* 設置線條的顏色和粗細 */
+  margin: 0 20px; /* 線條與文本之間的間距 */
+}
+
+.text {
+  white-space: nowrap; /* 防止文本換行 */
+  font-size: 1.4rem; /* 調整文本大小 */
+  color: rgb(67, 70, 52); /* 設置文本顏色 */
+}

@@ -1,0 +1,58 @@
+/* Navbar.module.css */
+
+.navbar {
+  background-color: #ececec;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5rem;
+}
+
+.logoContainer {
+  display: flex;
+  align-items: center;
+  left: 10rem; /* 固定在左側，根據需要調整距離 */
+}
+
+.logoContainer img {
+  width: 40px;
+  height: auto;
+  margin-right: 10px;
+}
+
+.logoText {
+  color: rgb(16, 16, 16);
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.navWrapper {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center; /* 使 navList 在此容器中居中對齊 */
+}
+
+.navList {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  gap: 4rem;
+  margin: 0;
+  padding: 0;
+}
+
+.navItem {
+  margin: 0;
+}
+
+.navItem a {
+  color: rgb(33, 33, 33);
+  text-decoration: none;
+  font-family: 'Lora', serif;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.navItem a:hover {
+  text-decoration: underline;
+}
