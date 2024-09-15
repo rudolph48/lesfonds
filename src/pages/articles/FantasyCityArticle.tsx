@@ -1,10 +1,13 @@
 import { FC } from 'react';
 import styles from '../../styles/Article.module.css'; // 為文章專門定義的 CSS 模組
+import Link from 'next/link';
 
 const FantasyCityArticle: FC = () => {
   return (
     <div className={styles.pageContainer}>
-      <a href="/posts" className={styles.backLink}>返回 / 文章首頁</a>
+      <Link href='/posts' className={styles.backLink}>
+        返回 / 文章首頁
+      </Link>
       <h1 className={styles.articleTitle}>童話裡的夢幻都市 ─ 丹麥哈根</h1>
       <p className={styles.articleContent}>
         前往丹麥前，在社群媒體上看過了丹麥的著名景點，但在實際造訪後，丹麥的建築在我心中留下了深刻的印象。
@@ -16,16 +19,16 @@ const FantasyCityArticle: FC = () => {
       <p className={styles.articleContent}>
         當天現場滿滿的民眾回家了，隨著王室成員的揮手，大家都開始討論這特別的慶祝活動。
       </p>
-      
+
       <div className={styles.imageGallery}>
-      <img 
-            src="/images/17.jpg" 
-            className={styles.articleImage} 
-            style={{ width: '640px', height: 'auto' }} 
+        <img
+          src='/images/17.jpg'
+          className={styles.articleImage}
+          style={{ width: '640px', height: 'auto' }}
         />
       </div>
       <p style={{ fontSize: '15px', textAlign: 'center' }}>
-      女王一家人與中間慶祝成年的王子
+        女王一家人與中間慶祝成年的王子
       </p>
     </div>
   );

@@ -1,27 +1,36 @@
 import { useState } from 'react';
 import styles from '../../styles/Product.module.css';
+import Link from 'next/link';
 
 const Product1Page = () => {
   const [isOpen, setIsOpen] = useState({
     order: false,
     flavor: false,
-    package: false
+    package: false,
   });
 
-  const toggleSection = (section: string) => {
+  type Section = 'order' | 'flavor' | 'package';
+
+  const toggleSection = (section: Section) => {
     setIsOpen((prevState) => ({
       ...prevState,
-      [section]: !prevState[section]
+      [section]: !prevState[section],
     }));
   };
 
   return (
     <div className={styles.pageContainer}>
-      <a href="/posts" className={styles.backLink}>返回 / 當季甜點首頁</a>
+      <Link href='/posts' className={styles.backLink}>
+        返回 / 當季甜點首頁
+      </Link>
       <div className={styles.productContainer}>
         {/* 左側 - 圖片 */}
         <div className={styles.imageSection}>
-          <img src="/images/18.jpg" alt="夏之花 Fleur d'été" className={styles.productImage} />
+          <img
+            src='/images/18.jpg'
+            alt="夏之花 Fleur d'été"
+            className={styles.productImage}
+          />
         </div>
 
         {/* 右側 - 商品資訊 */}
@@ -30,7 +39,10 @@ const Product1Page = () => {
 
           {/* 訂購表單 */}
           <div className={styles.section}>
-            <button onClick={() => toggleSection('order')} className={styles.toggleButton}>
+            <button
+              onClick={() => toggleSection('order')}
+              className={styles.toggleButton}
+            >
               訂購表單 {isOpen.order ? '-' : '+'}
             </button>
             {isOpen.order && (
@@ -42,7 +54,10 @@ const Product1Page = () => {
 
           {/* 風味 */}
           <div className={styles.section}>
-            <button onClick={() => toggleSection('flavor')} className={styles.toggleButton}>
+            <button
+              onClick={() => toggleSection('flavor')}
+              className={styles.toggleButton}
+            >
               風味 {isOpen.flavor ? '-' : '+'}
             </button>
             {isOpen.flavor && (
@@ -54,7 +69,10 @@ const Product1Page = () => {
 
           {/* 套餐內商品 */}
           <div className={styles.section}>
-            <button onClick={() => toggleSection('package')} className={styles.toggleButton}>
+            <button
+              onClick={() => toggleSection('package')}
+              className={styles.toggleButton}
+            >
               套餐內商品 {isOpen.package ? '-' : '+'}
             </button>
             {isOpen.package && (
