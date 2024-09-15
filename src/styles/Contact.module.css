@@ -1,0 +1,126 @@
+/* 原本的樣式保持不變 */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: 'Noto Serif TC', serif;
+  text-align: center;
+}
+
+/* 新增的樣式：設置左右佈局 */
+.contactLayout {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start; /* 讓內容從上往下排列 */
+  flex-wrap: wrap; /* 小螢幕下允許換行 */
+  gap: 20px; /* 左右區域之間的距離 */
+  margin-top: 20px;
+}
+
+/* 左側聯絡資訊區域 */
+.contactInfoSection {
+  flex: 1 1 40%; /* 左側區域寬度 */
+  font-size: 1rem;
+  color: #444;
+  line-height: 2.2; /* 調整行距，使文字之間有更大空隙 */
+  text-align: center; /* 文字水平置中 */
+  margin-top: 40px; /* 調整與上方區塊的距離 */
+}
+
+/* 右側表單區域 */
+.formSection {
+  flex: 1 1 55%; /* 設定右側表單區域的寬度 */
+}
+
+/* 調整表單的整體寬度 */
+.form {
+  width: 100%;
+}
+
+/* 橫線樣式 */
+.separator {
+  width: 100px; /* 你可以根據需求調整寬度 */
+  height: 0.5px;
+  background-color: #444; /* 設定顏色，可以根據需求調整 */
+  border: none; /* 移除預設邊框 */
+  margin: 5px auto; /* 自動居中並設置上下邊距 */
+}
+
+/* 名字和姓氏容器 */
+.nameFields {
+  display: flex;
+  justify-content: space-between; /* 控制名字和姓氏之間的空白 */
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+/* 修改表單容器的對齊方式 */
+.form {
+  display: flex;
+  flex-direction: column; /* 保持垂直排列 */
+  align-items: flex-start; /* 讓表單元素靠左對齊 */
+  max-width: 600px; /* 設定表單的最大寬度 */
+  margin: 0 auto; /* 根據需要調整表單的位置 */
+}
+
+/* 名字和姓氏容器 */
+.nameFields {
+  display: flex;
+  justify-content: space-between; /* 控制名字和姓氏之間的空白 */
+  flex-wrap: wrap;
+  width: 60%; /* 讓名字和姓氏輸入框占滿父容器寬度 */
+  margin-bottom: 20px;
+}
+
+/* 調整「名字」和「姓氏」欄位的寬度 */
+.formGroup {
+  flex: 1 1 45%; /* 每個欄位設為 45% 寬度 */
+  margin-bottom: 10px;
+}
+
+/* 確保輸入框大小一致 */
+.formGroup input,
+.formGroup textarea {
+  width: 100%; /* 讓輸入框寬度為 100%，適應父容器 */
+  padding: 10px;
+  font-size: 0.9rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.formGroup input {
+  height: 30px;
+}
+
+.formGroup textarea {
+  resize: none;
+  height: 100px;
+}
+
+/* 按鈕樣式 */
+.submitButton {
+  background-color: #6e6546;
+  color: white;
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+/* 調整介紹文字和聯絡資訊的樣式 */
+.intro,
+.contactInfo {
+  font-size: 0.9rem; /* 調整介紹文字大小 */
+  line-height: 1.8; /* 調整介紹文字的行距 */
+  margin-bottom: 10px;
+  color: #444;
+}
+
+/* 響應式設計：在小螢幕上，將左右佈局轉換為上下佈局 */
+@media (max-width: 768px) {
+  .contactLayout {
+    flex-direction: column; /* 小螢幕下上下排列 */
+  }
+}
