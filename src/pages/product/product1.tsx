@@ -35,7 +35,7 @@ const Product1Page = () => {
 
         {/* 右側 - 商品資訊 */}
         <div className={styles.infoSection}>
-          <h1 className={styles.productTitle}>夏之花 Fleur d'été</h1>
+          <h1 className={styles.productTitle}>夏之花 Fleur dété</h1>
 
           {/* 訂購表單 */}
           <div className={styles.section}>
