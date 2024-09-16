@@ -11,10 +11,12 @@ export default function Navbar() {
 
   return (
     <nav className={styles.navbar}>
-      <div className={styles.logoContainer}>
-        <img src='/images/8.jpg' alt='Leaf' />
-        <span className={styles.logoText}>LES FONDS</span>
-      </div>
+      <Link href='/' passHref>
+        <div className={styles.logoContainer}>
+          <img src='/images/8.jpg' alt='Leaf' />
+          <span className={styles.logoText}>LES FONDS</span>
+        </div>
+      </Link>
       <div className={styles.navWrapper}>
         <ul className={styles.navList}>
           <li className={`${styles.navItem} ${isActive('/')}`}>
