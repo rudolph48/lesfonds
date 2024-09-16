@@ -1,5 +1,3 @@
-// pages/contact.tsx
-
 import React, { useState } from 'react';
 import styles from '../styles/Contact.module.css';
 
@@ -54,7 +52,7 @@ const Contact = () => {
         <div className={styles.formSection}>
           <form className={styles.form} onSubmit={handleSubmit}>
             <div className={styles.nameFields}>
-              <div className={styles.formGroup}>
+              <div className={styles.formGroupSmall}>
                 <label htmlFor='firstName'>名字 *</label>
                 <input
                   type='text'
@@ -63,10 +61,11 @@ const Contact = () => {
                   value={formData.firstName}
                   onChange={handleChange}
                   required
+                  className={styles.inputField} // 新增類名
                 />
               </div>
 
-              <div className={styles.formGroup}>
+              <div className={styles.formGroupSmall}>
                 <label htmlFor='lastName'>姓氏 *</label>
                 <input
                   type='text'
@@ -75,11 +74,12 @@ const Contact = () => {
                   value={formData.lastName}
                   onChange={handleChange}
                   required
+                  className={styles.inputField} // 新增類名
                 />
               </div>
             </div>
 
-            <div className={styles.formGroup}>
+            <div className={styles.formGroupLarge}>
               <label htmlFor='email'>Email *</label>
               <input
                 type='email'
@@ -88,10 +88,11 @@ const Contact = () => {
                 value={formData.email}
                 onChange={handleChange}
                 required
+                className={styles.inputField} // 新增類名
               />
             </div>
 
-            <div className={styles.formGroup}>
+            <div className={styles.formGroupLarge}>
               <label htmlFor='message'>問題 *</label>
               <textarea
                 id='message'
@@ -99,6 +100,7 @@ const Contact = () => {
                 value={formData.message}
                 onChange={handleChange}
                 required
+                className={styles.inputField} // 新增類名
               />
             </div>
 
