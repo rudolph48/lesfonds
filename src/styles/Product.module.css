@@ -1,3 +1,4 @@
+/* 根容器 - 整體頁面 */
 .pageContainer {
   display: flex;
   flex-direction: column;
@@ -6,56 +7,90 @@
   font-family: 'Lora', serif;
 }
 
+/* 返回鏈接 */
 .backLink {
   margin-bottom: 2.5rem;
   font-size: 1rem;
   color: #333;
   text-decoration: none;
   cursor: pointer;
-  max-width: 900px; /* 設置與 productContainer 一樣的寬度 */
+  max-width: 900px;
   width: 100%;
   display: flex;
-  justify-content: flex-start; /* 讓文字靠左對齊 */
+  justify-content: flex-start;
 }
 
+/* 商品容器 */
 .productContainer {
   display: flex;
   justify-content: space-between;
   max-width: 900px;
   width: 100%;
   margin-bottom: 2rem;
-  gap: 2rem; /* 增加左右區塊間距 */
+  gap: 2rem;
 }
 
+/* 左側 - 圖片區域 */
 .imageSection {
   flex: 1;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+  max-width: 100%;
 }
 
+/* 圖片樣式 */
 .productImage {
   max-width: 95%;
   height: auto;
   border-radius: 12px;
-  margin-bottom: 1.5rem; /* 增加圖片和標題之間的間距 */
+  margin-bottom: 1.5rem;
 }
 
+/* 小圓點容器 */
+.dotsContainer {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+/* 小圓點樣式 */
+.dot {
+  height: 12px;
+  width: 12px;
+  margin: 0 5px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+
+/* 當前圖片對應的小圓點的樣式 */
+.activeDot {
+  background-color: #333;
+}
+
+/* 右側 - 商品資訊 */
 .infoSection {
   flex: 1;
   padding-left: 2rem;
 }
 
+/* 商品標題 */
 .productTitle {
   font-size: 1.5rem;
   font-weight: bold;
   margin-bottom: 1.5rem;
 }
 
+/* 區塊樣式 */
 .section {
   margin-bottom: 1rem;
 }
 
+/* 切換按鈕樣式 */
 .toggleButton {
   background: none;
   border: none;
@@ -63,44 +98,45 @@
   cursor: pointer;
   padding: 0;
   color: #333;
-  transition: color 0.3s ease; /* 增加過渡效果 */
+  transition: color 0.3s ease;
 }
 
+/* 切換按鈕懸停效果 */
 .toggleButton:hover {
-  color: #6e6546; /* 當鼠標懸停時改變顏色 */
+  color: #6e6546;
 }
 
+/* 切換按鈕點擊效果 */
 .toggleButton:active {
   color: #333;
   font-weight: bold;
 }
 
+/* 區塊內容樣式 */
 .sectionContent {
   margin-top: 0.5rem;
   font-size: 1rem;
 }
 
+/* 描述區域樣式 */
 .description {
   text-align: left;
   font-size: 1rem;
   line-height: 1.6;
-  max-width: 600px; /* 調整文字寬度以適配圖片 */
-  margin-left: 10;
+  max-width: 400px;
+  margin-left: 10px;
 }
 
-.imageSection {
-  flex: 1;
-  max-width: 100%; /* 確保圖片不會超過容器寬度 */
-}
-
+/* 分隔線樣式 */
 .separator {
-  width: 80%; /* 或調整到你需要的寬度 */
-  height: 1px; /* 橫線的高度 */
-  background-color: rgb(169, 169, 169); /* 橫線的顏色 */
-  border: none; /* 移除預設的邊框 */
-  margin: 1rem 0; /* 上下邊距，讓橫線與內容保持適當距離 */
+  width: 80%;
+  height: 1px;
+  background-color: rgb(169, 169, 169);
+  border: none;
+  margin: 1rem 0;
 }
 
+/* 響應式設計 */
 @media (max-width: 768px) {
   .productContainer {
     flex-direction: column;
