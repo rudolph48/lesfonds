@@ -4,8 +4,7 @@
   display: flex;
   justify-content: center; /* 水平居中對齊 */
   gap: 80px; /* 設置圖片之間的固定間隔 */
-  margin-bottom: 3.5rem; /* 調整與上方區域的間距 */
-  
+  margin-bottom: 5.5rem; /* 調整與上方區域的間距 */
 }
 
 .image {

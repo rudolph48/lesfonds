@@ -113,7 +113,7 @@ const ProductPage = ({ product }: ProductPageProps) => {
             </button>
             {isOpen.package && (
               <div className={styles.sectionContent}>
-                <p>{product.package}</p>
+                <div dangerouslySetInnerHTML={{ __html: product.package }} />
               </div>
             )}
           </div>
@@ -153,15 +153,27 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
       description:
         '艷夏陽光，夏日白天，是夏天最鮮明的意象。<br />整體白黃的色調是夏日艷陽高照的炙熱，再以花朵外型傳遞夏天的知性與優雅，<br /><br />芒果、鳳梨和百香果交織成熱帶水果風味，迷迭香與蜜雪芒果熬製成餡，搭配上椰子的酥脆和奶香，整體傳遞炎炎夏日感。',
       flavor: '蜜雪芒果、熱帶水果、椰子',
-      package: '迷迭香芒果醬、奶油乳酪香緹、熱帶水果慕斯',
+      package: '迷迭香芒果醬<br />奶油乳酪香緹<br />熱帶水果慕斯',
     },
     '2': {
       id: '2',
-      name: '其他甜點',
-      images: ['/images/19.jpg'],
-      description: '另一個美味的甜點。',
-      flavor: '香草、巧克力、草莓',
-      package: '香草醬、巧克力片、草莓醬',
+      name: '日暮玫瑰 La rose',
+      images: ['/images/20.jpg', '/images/21.jpg'],
+      description:
+        '慵懶的夏日午後，天空的色調逐漸轉為帶粉調的暖黃，微風吹來都是隨興、清爽且愜意的。<br/><br/>玫瑰慕斯作為此款甜點的主體，每一口尾韻都是玫瑰獨特的香味。結合台灣水蜜桃的香甜與覆盆子果醬的微酸，將味覺提升到另一個層次，搭配綜合堅果醬的堅果香，整款甜點清新優雅。<br/><br/>日暮玫瑰也呼應我在Ferrandi的期末作品_Afterglow，同樣運用帶有粉紫調的食材傳遞出夕陽餘暉最美的顏色。當時運用黑醋栗作為甜點主要元素，這次我們則使用台灣種植的玫瑰，在花香的甜蜜中，體驗夏天的燦爛。',
+      flavor: '玫瑰、水蜜桃、堅果',
+      package:
+        '玫瑰慕斯<br />覆盆子果醬<br />水蜜桃奶餡<br />綜合堅果醬<br />杏仁蛋糕<br />沙布蕾餅乾底',
+    },
+    '3': {
+      id: '3',
+      name: '仲夏時光 Le temps dun été',
+      images: ['/images/22.jpg', '/images/23.jpg'],
+      description:
+        '以「時光」總結夏日一天的感受。<br/><br/>盛夏，夜晚暖風輕拂臉龐。空氣中是太陽照射過的暖和氣息，餘暉將天空渲染成藍紫色的，令人沉醉不已。<br/><br/>芝麻的清香與微苦和糖漬無花果醬的特殊香甜形成平衡，再與白乳酪慕斯柔滑不膩的風味互相襯托。整體視覺則是帶莓果紅與深黑的色調，希望呈現出夕陽到夜晚的過渡感。',
+      flavor: '無花果、芝麻、白乳酪',
+      package:
+        '奶油乳酪香緹<br />白乳酪慕斯<br />糖漬無花果醬<br />芝麻奶餡<br />芝麻蛋糕底',
     },
   };
 
