@@ -1,0 +1,41 @@
+/* components/Footer.module.css */
+
+.footer {
+  background-color: #414224; /* 背景顏色 */
+  padding: 2rem 0;
+  color: #fff; /* 文字顏色 */
+  text-align: center; /* 文本居中 */
+  font-family: 'Lora', serif; /* 使用自定義字體 */
+  margin-top: 4rem ;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between; /* 分散三列 */
+  max-width: 1200px; /* 限制最大寬度 */
+  margin: 0 auto;
+}
+
+.column {
+  width: 30%; /* 每列寬度 */
+}
+
+.column h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.column p {
+  margin: 0.5rem 0;
+}
+
+.socialIcons {
+  margin-top: 2rem;
+}
+
+.socialIcons img {
+  margin: 0 10px;
+  width: 30px;
+  height: 30px;
+  vertical-align: middle;
+}

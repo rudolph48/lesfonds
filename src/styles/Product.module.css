@@ -1,0 +1,75 @@
+.pageContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    font-family: 'Lora', serif;
+  }
+  
+  .backLink {
+    text-align: left;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    color: #333;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  .productContainer {
+    display: flex;
+    justify-content: space-between;
+    max-width: 900px;
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+  
+  .imageSection {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .productImage {
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+  }
+  
+  .infoSection {
+    flex: 1;
+    padding-left: 2rem;
+  }
+  
+  .productTitle {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+  }
+  
+  .section {
+    margin-bottom: 1rem;
+  }
+  
+  .toggleButton {
+    background: none;
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+    padding: 0;
+    color: #333;
+  }
+  
+  .sectionContent {
+    margin-top: 0.5rem;
+    font-size: 1rem;
+  }
+  
+  .description {
+    text-align: center;
+    max-width: 700px;
+    margin-top: 2rem;
+    font-size: 1.2rem;
+    line-height: 1.6;
+  }
+  

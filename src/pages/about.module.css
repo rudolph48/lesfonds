@@ -1,0 +1,68 @@
+.aboutSection {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding: 40px;
+    background-color: #f8f8f8;
+  }
+  
+  .contentBlock {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px; /* 控制圖片和文字之間的間距 */
+    margin-bottom: 40px;
+  }
+  
+  .textContainer h2 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    color: #000; /* 設置標題顏色為黑色 */
+  }
+
+  .imageContainer img {
+    max-width: 250px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .imageContainer2 img {
+    max-width: 350px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  .textContainer {
+    max-width: 600px;
+    padding-left: 20px;
+    text-align: center; /* 使文字在容器中水平置中 */
+  }
+  
+  .textContainer h2 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+  }
+  
+  .textContainer p {
+    line-height: 1.6;
+    font-size: 0.93em;
+    color: #333;
+  }
+  
+  .reverse {
+    flex-direction: row-reverse;
+  }
+  
+  @media (max-width: 768px) {
+    .contentBlock {
+      flex-direction: column;
+    }
+  
+    .textContainer {
+      padding-left: 0;
+      margin-top: 20px;
+    }
+  }
+  

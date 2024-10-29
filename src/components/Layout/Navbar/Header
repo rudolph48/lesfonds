@@ -1,0 +1,46 @@
+/* Navbar.module.css */
+
+.navbar {
+  display: flex;
+  align-items: center;
+  background-color: #2c3e50; /* 你可以根據需要調整背景顏色 */
+  padding: 1rem;
+}
+
+.navList {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navItem {
+  margin-right: 1rem;
+}
+
+.navItem a {
+  color: white;
+  text-decoration: none;
+}
+
+.navItem a:hover {
+  text-decoration: underline;
+}
+
+.logoContainer {
+  display: flex;
+  align-items: center;
+  margin-right: 2rem; /* 調整圖片和導航項目之間的間距 */
+}
+
+.logoContainer img {
+  width: 40px; /* 調整圖片大小 */
+  height: auto;
+  margin-right: 10px; /* 調整圖片和文字之間的間距 */
+}
+
+.logoText {
+  color: white;
+  font-weight: bold;
+  font-size: 1.2rem; /* 調整字體大小 */
+}

@@ -1,0 +1,44 @@
+.pageContainer {
+    max-width: 800px;
+    margin: 0 auto; /* 中心對齊頁面 */
+    padding: 2rem;
+    background-color: #fff; /* 背景白色 */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* 添加陰影 */
+    border-radius: 8px; /* 圓角邊框 */
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+  }
+  
+  .backLink {
+    font-size: 14px;
+    color: #555;
+    text-decoration: none;
+    margin-bottom: 1rem;
+    display: inline-block;
+  }
+  
+  .pageTitle {
+    font-size: 36px;
+    font-family: 'Lora', serif;
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+  
+  .pageContent {
+    font-size: 16px;
+    line-height: 1.8;
+    margin-bottom: 2rem;
+    color: #333;
+  }
+  
+  .imageContainer {
+    margin-top: 2rem;
+    text-align: center;
+  }
+  
+  .image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px; /* 圓角圖片 */
+  }
+  

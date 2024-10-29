@@ -1,0 +1,42 @@
+/* components/ImageBlock.module.css */
+.imageBlock {
+  position: relative;
+  width: 100%;
+  height: 650px; /* 調整區塊高度 */
+  background-image: url('/images/1.jpg'); /* 設置背景圖片的路徑 */
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.textOverlay {
+  position: absolute; /* 絕對定位，使其相對於 imageBlock 定位 */
+  color: white; /* 設置文字顏色 */
+  text-align: center; /* 文字居中對齊 */
+  max-width: 80%; /* 限制文字區塊的最大寬度 */
+}
+
+.textOverlay h1,
+.textOverlay h2,
+.textOverlay p {
+  margin: 0; /* 去掉文字的外邊距 */
+  padding: 0; /* 去掉文字的內邊距 */
+}
+
+/* Optional: Set some styles for different text elements */
+.textOverlay h1 {
+  font-size: 4rem; /* 調整字體大小 */
+  margin-bottom: 1rem; /* 調整 h1 與下一行文字之間的間距 */
+}
+
+.textOverlay h2 {
+  font-size: 2.5rem; /* 調整字體大小 */
+  margin-bottom: 1rem; /* 調整 h2 與下一行文字之間的間距 */
+}
+
+.textOverlay p {
+  font-size: 1rem; /* 調整字體大小 */
+}
